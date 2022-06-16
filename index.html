@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/site.css" />
+		<title>Desafio 2 - Jogo da Forca</title>
+	</head>
+
+	<body>
+		<div class="container-opcoes">
+			<button class="startGame" onclick="iniciarJogo()">Iniciar jogo</button>
+			<button onclick="addWords()">Adicionar nova palavra</button>
+		</div>
+
+		<div class="container-palavras">
+			<h2>ADICIONAR PALAVRA</h2>
+			<div>
+				<input type="text" name="palavra" placeholder="Palavra" />
+				<input type="text" name="dica" placeholder="Dica" />
+				<input
+					type="submit"
+					name="addpalavrabutton"
+					value="Adicionar Palavra"
+					onclick="addWordsMemo()"
+				/>
+			</div>
+		</div>
+
+		<div class="container-jogo">
+			<button class="startGame" onclick="reinciar()">Reiniciar jogo</button>
+
+			<div class="container-desenho-forca">
+				<canvas id="forca" width="200" height="200"></canvas>
+			</div>
+
+			<div class="container-dica"></div>
+
+			<div class="container-tracker-letras">
+				<div class="container-tracker-letras-in"></div>
+			</div>
+			<div class="container-tracker-letras-erros"></div>
+
+			<div class="palavra"></div>
+			<div class="resultado"></div>
+		</div>
+	</body>
+
+	<script src="js/site.js"></script>
+</html>

@@ -1,0 +1,65 @@
+.container-palavras {
+    display: none;
+}
+
+.container-jogo {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-tracker-letras-erros,
+.container-tracker-letras,
+.container-dica {
+    margin: 10px;
+}
+
+.container-tracker-letras-in {
+    display: flex;
+    justify-content: center;
+}
+
+.container-dica {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    display: none;
+}
+
+.div-secret-word {
+    border-bottom: 3px solid blue;
+    width: 15px;
+    margin: 0 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 15px;
+    padding: 10px;
+}
+
+.div-wrong-word {
+    border-radius: 5px;
+    background-color: rgba(206, 37, 37, 0.2);
+    border: 3px solid rgba(206, 37, 37, 0.5);
+    color: #000;
+    font-weight: bold;
+    margin: 0 5px 0 0;
+    padding: 10px;
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    width: 15px;
+    height: 15px;
+}
+
+.resultado {
+    margin: 5px;
+    font-weight: bold;
+    color: red;
+    font-size: x-large;
+}
+
+.resultado .segredo-span {
+    text-transform: uppercase;
+}
